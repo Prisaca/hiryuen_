@@ -69,12 +69,12 @@ const Header = () => {
           </div>
         </nav>
       </header>
-      <CartSlider
+      {cart && <CartSlider
         cart={cart}
         cartIsLoading={isLoading}
         open={cartSliderIsOpen}
         setCartSliderIsOpen={setCartSliderIsOpen}
-      />
+      />}
     </>
   )
 }
